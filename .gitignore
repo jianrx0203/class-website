@@ -1,19 +1,36 @@
-# Dependencies and build output
+# Dependencies
 node_modules/
-dist/
 
-# Local environment and logs
-.env
-.env.*
-!.env.example
+# Logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
-# Operating system and editor files
+# OS files
 .DS_Store
-.idea/
+Thumbs.db
+
+# IDE
 .vscode/
-*.swp
+.idea/
+
+# Build output
+dist/
+build/
+
+# Rust
+server-rust/target/
+server-rust.exe
+*.pdb
+
+# Binaries / Releases
+releases/
+*.exe
+*.apk
+*.ipk
+*.zip
+
+# Benchmark / temp
+benchmark.bat
+
+java/out/
+*.class
